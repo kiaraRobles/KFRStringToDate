@@ -1,0 +1,311 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E9268A301BE52A7B004FA45F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9268A2F1BE52A7B004FA45F /* main.m */; };
+		E9268A331BE52A7B004FA45F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9268A321BE52A7B004FA45F /* AppDelegate.m */; };
+		E9268A361BE52A7B004FA45F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9268A351BE52A7B004FA45F /* ViewController.m */; };
+		E9268A391BE52A7B004FA45F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9268A371BE52A7B004FA45F /* Main.storyboard */; };
+		E9268A3B1BE52A7B004FA45F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9268A3A1BE52A7B004FA45F /* Assets.xcassets */; };
+		E9268A3E1BE52A7B004FA45F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9268A3C1BE52A7B004FA45F /* LaunchScreen.storyboard */; };
+		E9268A471BE52AA5004FA45F /* KFRStringtoDate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9268A461BE52AA5004FA45F /* KFRStringtoDate.m */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E9268A2B1BE52A7B004FA45F /* KFRStringToDate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KFRStringToDate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9268A2F1BE52A7B004FA45F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E9268A311BE52A7B004FA45F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E9268A321BE52A7B004FA45F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E9268A341BE52A7B004FA45F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E9268A351BE52A7B004FA45F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E9268A381BE52A7B004FA45F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E9268A3A1BE52A7B004FA45F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E9268A3D1BE52A7B004FA45F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E9268A3F1BE52A7B004FA45F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9268A451BE52AA5004FA45F /* KFRStringtoDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KFRStringtoDate.h; path = ../KFRStringtoDate.h; sourceTree = "<group>"; };
+		E9268A461BE52AA5004FA45F /* KFRStringtoDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KFRStringtoDate.m; path = ../KFRStringtoDate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E9268A281BE52A7B004FA45F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E9268A221BE52A7B004FA45F = {
+			isa = PBXGroup;
+			children = (
+				E9268A2D1BE52A7B004FA45F /* KFRStringToDate */,
+				E9268A2C1BE52A7B004FA45F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E9268A2C1BE52A7B004FA45F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9268A2B1BE52A7B004FA45F /* KFRStringToDate.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9268A2D1BE52A7B004FA45F /* KFRStringToDate */ = {
+			isa = PBXGroup;
+			children = (
+				E9268A311BE52A7B004FA45F /* AppDelegate.h */,
+				E9268A321BE52A7B004FA45F /* AppDelegate.m */,
+				E9268A341BE52A7B004FA45F /* ViewController.h */,
+				E9268A351BE52A7B004FA45F /* ViewController.m */,
+				E9268A451BE52AA5004FA45F /* KFRStringtoDate.h */,
+				E9268A461BE52AA5004FA45F /* KFRStringtoDate.m */,
+				E9268A371BE52A7B004FA45F /* Main.storyboard */,
+				E9268A3A1BE52A7B004FA45F /* Assets.xcassets */,
+				E9268A3C1BE52A7B004FA45F /* LaunchScreen.storyboard */,
+				E9268A3F1BE52A7B004FA45F /* Info.plist */,
+				E9268A2E1BE52A7B004FA45F /* Supporting Files */,
+			);
+			path = KFRStringToDate;
+			sourceTree = "<group>";
+		};
+		E9268A2E1BE52A7B004FA45F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E9268A2F1BE52A7B004FA45F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E9268A2A1BE52A7B004FA45F /* KFRStringToDate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9268A421BE52A7B004FA45F /* Build configuration list for PBXNativeTarget "KFRStringToDate" */;
+			buildPhases = (
+				E9268A271BE52A7B004FA45F /* Sources */,
+				E9268A281BE52A7B004FA45F /* Frameworks */,
+				E9268A291BE52A7B004FA45F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KFRStringToDate;
+			productName = KFRStringToDate;
+			productReference = E9268A2B1BE52A7B004FA45F /* KFRStringToDate.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E9268A231BE52A7B004FA45F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Kiara Robles";
+				TargetAttributes = {
+					E9268A2A1BE52A7B004FA45F = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = E9268A261BE52A7B004FA45F /* Build configuration list for PBXProject "KFRStringToDate" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E9268A221BE52A7B004FA45F;
+			productRefGroup = E9268A2C1BE52A7B004FA45F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E9268A2A1BE52A7B004FA45F /* KFRStringToDate */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E9268A291BE52A7B004FA45F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9268A3E1BE52A7B004FA45F /* LaunchScreen.storyboard in Resources */,
+				E9268A3B1BE52A7B004FA45F /* Assets.xcassets in Resources */,
+				E9268A391BE52A7B004FA45F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E9268A271BE52A7B004FA45F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9268A361BE52A7B004FA45F /* ViewController.m in Sources */,
+				E9268A331BE52A7B004FA45F /* AppDelegate.m in Sources */,
+				E9268A301BE52A7B004FA45F /* main.m in Sources */,
+				E9268A471BE52AA5004FA45F /* KFRStringtoDate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E9268A371BE52A7B004FA45F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9268A381BE52A7B004FA45F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E9268A3C1BE52A7B004FA45F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9268A3D1BE52A7B004FA45F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E9268A401BE52A7B004FA45F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E9268A411BE52A7B004FA45F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E9268A431BE52A7B004FA45F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KFRStringToDate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = KiaraRobles.KFRStringToDate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E9268A441BE52A7B004FA45F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KFRStringToDate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = KiaraRobles.KFRStringToDate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E9268A261BE52A7B004FA45F /* Build configuration list for PBXProject "KFRStringToDate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9268A401BE52A7B004FA45F /* Debug */,
+				E9268A411BE52A7B004FA45F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9268A421BE52A7B004FA45F /* Build configuration list for PBXNativeTarget "KFRStringToDate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9268A431BE52A7B004FA45F /* Debug */,
+				E9268A441BE52A7B004FA45F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E9268A231BE52A7B004FA45F /* Project object */;
+}
