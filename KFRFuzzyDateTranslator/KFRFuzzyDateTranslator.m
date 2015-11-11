@@ -21,24 +21,20 @@ typedef NS_ENUM(NSInteger, enumDay) {
 @interface KFRFuzzyDateTranslator ( )
 
 @property (nonatomic, readwrite) NSDate *date;
-
 @property (nonatomic, readwrite, copy) NSCalendar *calendar;
 @property (nonatomic, readwrite, copy) NSDateComponents *comps;
 @property (nonatomic, readwrite, copy) NSDateComponents *comps2;
-@property (nonatomic, readwrite, copy) NSDateComponents *comps3;
+@property (nonatomic, readwrite, copy) NSDateComponents *travelDateTimeComponents;
 @property (readwrite) NSUInteger weekday;
 @property (readwrite) NSInteger month;
 @property (readwrite) NSInteger year;
 @property (nonatomic) NSSet *datesGeneral;
 @property (nonatomic) NSSet *datesSpecificWeek;
-
 @property (nonatomic, strong) NSMutableArray *wordsArray;
 @property (nonatomic, readwrite, copy) NSDateComponents *deltaComps;
 @property (nonatomic) enumDay nextDay;
-
 @property (nonatomic) NSString *wordIndex1;
 @property (nonatomic) NSString *wordIndex2;
-
 @property (nonatomic) bool isDatesGeneral;
 @property (nonatomic) bool isDatesSpecificWeek;
 @property (nonatomic) bool isBoolBust;
@@ -54,7 +50,7 @@ typedef NS_ENUM(NSInteger, enumDay) {
     self = [super init];
     if (self) {
         _calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
-        _relevantDate = [NSDate date];
+        _relevantDate = [self currentDateInSystemTimezone:[NSDate date]];
         _comps = [self.calendar components:NSCalendarUnitWeekday fromDate:self.relevantDate];
         _weekday = [self.comps weekday];
         [self setupSetsForComparison];
@@ -70,7 +66,7 @@ typedef NS_ENUM(NSInteger, enumDay) {
     if (self) {
         _string = string;
         _calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
-        _relevantDate = [NSDate date];
+        _relevantDate = [self currentDateInSystemTimezone:[NSDate date]];
         _comps = [self.calendar components:NSCalendarUnitWeekday fromDate:self.relevantDate];
         _weekday = [self.comps weekday];
         [self setupSetsForComparison];
@@ -92,6 +88,7 @@ typedef NS_ENUM(NSInteger, enumDay) {
         NSDateComponents *const components = [calendar components:preservedComponents fromDate:date];
         _relevantDate = [calendar dateFromComponents:components];
         
+        
         //_relevantDate = [dateFormatter dateFromString:dateString];
         _comps = [self.calendar components:NSCalendarUnitWeekday fromDate:self.relevantDate];
         _comps2 = [self.calendar components:NSCalendarUnitMonth fromDate:self.relevantDate];
@@ -101,6 +98,20 @@ typedef NS_ENUM(NSInteger, enumDay) {
         [self setupSetsForComparison];
     }
     return self;
+}
+- (NSDate *) currentDateInSystemTimezone: (NSDate *)relevantDate {
+    NSDate* sourceDate = [NSDate date];
+    
+    NSTimeZone* sourceTimeZone = [NSTimeZone timeZoneWithAbbreviation:@"GMT"];
+    NSTimeZone* destinationTimeZone = [NSTimeZone systemTimeZone];
+    
+    NSInteger sourceGMTOffset = [sourceTimeZone secondsFromGMTForDate:sourceDate];
+    NSInteger destinationGMTOffset = [destinationTimeZone secondsFromGMTForDate:sourceDate];
+    NSTimeInterval interval = destinationGMTOffset - sourceGMTOffset;
+    
+    NSDate* destinationDate = [[NSDate alloc] initWithTimeInterval:interval sinceDate:sourceDate];
+    
+    return destinationDate;
 }
 - (NSMutableArray *) stringToWordArray:(NSString *)string {
     
