@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E7B9D96A9D589BE0ECB67BD /* libPods-KFRFuzzyDateTranslatorTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 38694E3050F9652182EEBBB5 /* libPods-KFRFuzzyDateTranslatorTests.a */; };
+		E939B16B1BF25F3400BA02DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E939B16A1BF25F3400BA02DB /* main.m */; };
+		E939B16E1BF25F3400BA02DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E939B16D1BF25F3400BA02DB /* AppDelegate.m */; };
+		E939B1711BF25F3400BA02DB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E939B1701BF25F3400BA02DB /* ViewController.m */; };
+		E939B1741BF25F3400BA02DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E939B1721BF25F3400BA02DB /* Main.storyboard */; };
+		E939B1761BF25F3400BA02DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E939B1751BF25F3400BA02DB /* Assets.xcassets */; };
+		E939B1791BF25F3400BA02DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E939B1771BF25F3400BA02DB /* LaunchScreen.storyboard */; };
+		E939B1841BF25F3400BA02DB /* KFRFuzzyDateTranslatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E939B1831BF25F3400BA02DB /* KFRFuzzyDateTranslatorTests.m */; };
+		E939B1931BF25F8900BA02DB /* KFRFuzzyDateTranslator.m in Sources */ = {isa = PBXBuildFile; fileRef = E939B1921BF25F8900BA02DB /* KFRFuzzyDateTranslator.m */; settings = {ASSET_TAGS = (); }; };
+		E939B1971BF2671900BA02DB /* KFRFuzzyDateTranslatorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E939B1941BF2629A00BA02DB /* KFRFuzzyDateTranslatorSpec.m */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E939B1801BF25F3400BA02DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E939B15E1BF25F3400BA02DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E939B1651BF25F3400BA02DB;
+			remoteInfo = KFRFuzzyDateTranslator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		38694E3050F9652182EEBBB5 /* libPods-KFRFuzzyDateTranslatorTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KFRFuzzyDateTranslatorTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		620FF99B93AE3C5E81164140 /* Pods-KFRFuzzyDateTranslatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KFRFuzzyDateTranslatorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KFRFuzzyDateTranslatorTests/Pods-KFRFuzzyDateTranslatorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		769138FE9B20046D807C8E98 /* Pods-KFRFuzzyDateTranslatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KFRFuzzyDateTranslatorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KFRFuzzyDateTranslatorTests/Pods-KFRFuzzyDateTranslatorTests.release.xcconfig"; sourceTree = "<group>"; };
+		E939B1661BF25F3400BA02DB /* KFRFuzzyDateTranslator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KFRFuzzyDateTranslator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E939B16A1BF25F3400BA02DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E939B16C1BF25F3400BA02DB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E939B16D1BF25F3400BA02DB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E939B16F1BF25F3400BA02DB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E939B1701BF25F3400BA02DB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E939B1731BF25F3400BA02DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E939B1751BF25F3400BA02DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E939B1781BF25F3400BA02DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E939B17A1BF25F3400BA02DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E939B17F1BF25F3400BA02DB /* KFRFuzzyDateTranslatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KFRFuzzyDateTranslatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E939B1831BF25F3400BA02DB /* KFRFuzzyDateTranslatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFRFuzzyDateTranslatorTests.m; sourceTree = "<group>"; };
+		E939B1851BF25F3400BA02DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E939B1911BF25F8900BA02DB /* KFRFuzzyDateTranslator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFRFuzzyDateTranslator.h; sourceTree = "<group>"; };
+		E939B1921BF25F8900BA02DB /* KFRFuzzyDateTranslator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFRFuzzyDateTranslator.m; sourceTree = "<group>"; };
+		E939B1941BF2629A00BA02DB /* KFRFuzzyDateTranslatorSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFRFuzzyDateTranslatorSpec.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E939B1631BF25F3400BA02DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E939B17C1BF25F3400BA02DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E7B9D96A9D589BE0ECB67BD /* libPods-KFRFuzzyDateTranslatorTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		747F8AA384A0A91A8A9A54A9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				620FF99B93AE3C5E81164140 /* Pods-KFRFuzzyDateTranslatorTests.debug.xcconfig */,
+				769138FE9B20046D807C8E98 /* Pods-KFRFuzzyDateTranslatorTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		93D642880E6DBE077D370E21 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				38694E3050F9652182EEBBB5 /* libPods-KFRFuzzyDateTranslatorTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E939B15D1BF25F3400BA02DB = {
+			isa = PBXGroup;
+			children = (
+				E939B1681BF25F3400BA02DB /* KFRFuzzyDateTranslator */,
+				E939B1821BF25F3400BA02DB /* KFRFuzzyDateTranslatorTests */,
+				E939B1671BF25F3400BA02DB /* Products */,
+				747F8AA384A0A91A8A9A54A9 /* Pods */,
+				93D642880E6DBE077D370E21 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E939B1671BF25F3400BA02DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E939B1661BF25F3400BA02DB /* KFRFuzzyDateTranslator.app */,
+				E939B17F1BF25F3400BA02DB /* KFRFuzzyDateTranslatorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E939B1681BF25F3400BA02DB /* KFRFuzzyDateTranslator */ = {
+			isa = PBXGroup;
+			children = (
+				E939B16C1BF25F3400BA02DB /* AppDelegate.h */,
+				E939B16D1BF25F3400BA02DB /* AppDelegate.m */,
+				E939B16F1BF25F3400BA02DB /* ViewController.h */,
+				E939B1701BF25F3400BA02DB /* ViewController.m */,
+				E939B1911BF25F8900BA02DB /* KFRFuzzyDateTranslator.h */,
+				E939B1921BF25F8900BA02DB /* KFRFuzzyDateTranslator.m */,
+				E939B1721BF25F3400BA02DB /* Main.storyboard */,
+				E939B1751BF25F3400BA02DB /* Assets.xcassets */,
+				E939B1771BF25F3400BA02DB /* LaunchScreen.storyboard */,
+				E939B17A1BF25F3400BA02DB /* Info.plist */,
+				E939B1691BF25F3400BA02DB /* Supporting Files */,
+			);
+			path = KFRFuzzyDateTranslator;
+			sourceTree = "<group>";
+		};
+		E939B1691BF25F3400BA02DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E939B16A1BF25F3400BA02DB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E939B1821BF25F3400BA02DB /* KFRFuzzyDateTranslatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				E939B1831BF25F3400BA02DB /* KFRFuzzyDateTranslatorTests.m */,
+				E939B1941BF2629A00BA02DB /* KFRFuzzyDateTranslatorSpec.m */,
+				E939B1851BF25F3400BA02DB /* Info.plist */,
+			);
+			path = KFRFuzzyDateTranslatorTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E939B1651BF25F3400BA02DB /* KFRFuzzyDateTranslator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E939B1881BF25F3400BA02DB /* Build configuration list for PBXNativeTarget "KFRFuzzyDateTranslator" */;
+			buildPhases = (
+				E939B1621BF25F3400BA02DB /* Sources */,
+				E939B1631BF25F3400BA02DB /* Frameworks */,
+				E939B1641BF25F3400BA02DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KFRFuzzyDateTranslator;
+			productName = KFRFuzzyDateTranslator;
+			productReference = E939B1661BF25F3400BA02DB /* KFRFuzzyDateTranslator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E939B17E1BF25F3400BA02DB /* KFRFuzzyDateTranslatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E939B18B1BF25F3400BA02DB /* Build configuration list for PBXNativeTarget "KFRFuzzyDateTranslatorTests" */;
+			buildPhases = (
+				375EAC42DF13E32B49A53DA5 /* Check Pods Manifest.lock */,
+				E939B17B1BF25F3400BA02DB /* Sources */,
+				E939B17C1BF25F3400BA02DB /* Frameworks */,
+				E939B17D1BF25F3400BA02DB /* Resources */,
+				DE71C16ED9EB34D9DB341BFC /* Embed Pods Frameworks */,
+				826E87A66845C64E7445E6D1 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E939B1811BF25F3400BA02DB /* PBXTargetDependency */,
+			);
+			name = KFRFuzzyDateTranslatorTests;
+			productName = KFRFuzzyDateTranslatorTests;
+			productReference = E939B17F1BF25F3400BA02DB /* KFRFuzzyDateTranslatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E939B15E1BF25F3400BA02DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Kiara Robles";
+				TargetAttributes = {
+					E939B1651BF25F3400BA02DB = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					E939B17E1BF25F3400BA02DB = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = E939B1651BF25F3400BA02DB;
+					};
+				};
+			};
+			buildConfigurationList = E939B1611BF25F3400BA02DB /* Build configuration list for PBXProject "KFRFuzzyDateTranslator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E939B15D1BF25F3400BA02DB;
+			productRefGroup = E939B1671BF25F3400BA02DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E939B1651BF25F3400BA02DB /* KFRFuzzyDateTranslator */,
+				E939B17E1BF25F3400BA02DB /* KFRFuzzyDateTranslatorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E939B1641BF25F3400BA02DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E939B1791BF25F3400BA02DB /* LaunchScreen.storyboard in Resources */,
+				E939B1761BF25F3400BA02DB /* Assets.xcassets in Resources */,
+				E939B1741BF25F3400BA02DB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E939B17D1BF25F3400BA02DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		375EAC42DF13E32B49A53DA5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		826E87A66845C64E7445E6D1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KFRFuzzyDateTranslatorTests/Pods-KFRFuzzyDateTranslatorTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE71C16ED9EB34D9DB341BFC /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KFRFuzzyDateTranslatorTests/Pods-KFRFuzzyDateTranslatorTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E939B1621BF25F3400BA02DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E939B1711BF25F3400BA02DB /* ViewController.m in Sources */,
+				E939B16E1BF25F3400BA02DB /* AppDelegate.m in Sources */,
+				E939B1931BF25F8900BA02DB /* KFRFuzzyDateTranslator.m in Sources */,
+				E939B16B1BF25F3400BA02DB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E939B17B1BF25F3400BA02DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E939B1841BF25F3400BA02DB /* KFRFuzzyDateTranslatorTests.m in Sources */,
+				E939B1971BF2671900BA02DB /* KFRFuzzyDateTranslatorSpec.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E939B1811BF25F3400BA02DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E939B1651BF25F3400BA02DB /* KFRFuzzyDateTranslator */;
+			targetProxy = E939B1801BF25F3400BA02DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E939B1721BF25F3400BA02DB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E939B1731BF25F3400BA02DB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E939B1771BF25F3400BA02DB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E939B1781BF25F3400BA02DB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E939B1861BF25F3400BA02DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E939B1871BF25F3400BA02DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E939B1891BF25F3400BA02DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KFRFuzzyDateTranslator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = KiaraRobles.KFRFuzzyDateTranslator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E939B18A1BF25F3400BA02DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KFRFuzzyDateTranslator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = KiaraRobles.KFRFuzzyDateTranslator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E939B18C1BF25F3400BA02DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 620FF99B93AE3C5E81164140 /* Pods-KFRFuzzyDateTranslatorTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KFRFuzzyDateTranslatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = KiaraRobles.KFRFuzzyDateTranslatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KFRFuzzyDateTranslator.app/KFRFuzzyDateTranslator";
+			};
+			name = Debug;
+		};
+		E939B18D1BF25F3400BA02DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 769138FE9B20046D807C8E98 /* Pods-KFRFuzzyDateTranslatorTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KFRFuzzyDateTranslatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = KiaraRobles.KFRFuzzyDateTranslatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KFRFuzzyDateTranslator.app/KFRFuzzyDateTranslator";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E939B1611BF25F3400BA02DB /* Build configuration list for PBXProject "KFRFuzzyDateTranslator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E939B1861BF25F3400BA02DB /* Debug */,
+				E939B1871BF25F3400BA02DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E939B1881BF25F3400BA02DB /* Build configuration list for PBXNativeTarget "KFRFuzzyDateTranslator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E939B1891BF25F3400BA02DB /* Debug */,
+				E939B18A1BF25F3400BA02DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E939B18B1BF25F3400BA02DB /* Build configuration list for PBXNativeTarget "KFRFuzzyDateTranslatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E939B18C1BF25F3400BA02DB /* Debug */,
+				E939B18D1BF25F3400BA02DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E939B15E1BF25F3400BA02DB /* Project object */;
+}
