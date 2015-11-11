@@ -20,28 +20,31 @@
     // Override point for customization after application launch.
     
     
-    KFRFuzzyDateTranslator *instance = [[KFRFuzzyDateTranslator alloc] init];
-    
+    KFRFuzzyDateTranslator *instance = [[KFRFuzzyDateTranslator alloc] initWithRelevantDate:@"29-FEB-16"];
     NSLog(@"______________________________________");
-    instance.string = @"next week day";
-    id date = [instance dateFromString:instance.string];
+    NSString *string = @"I did the thing this week.";
+    id date = [instance dateFromString:string];
     NSLog(@"\nNext Week: %@", date);
     
-    instance.string = @"Do the thing next monday";
-    date = [instance dateFromString:instance.string];
-    NSLog(@"\n %@", date);
+    NSString *expetedDateString = @"23-FEB-16";
+    NSDate *expetedDate = [instance returnDateAtMidnight:expetedDateString];
+    NSLog(@"\nexpetedDate: %@", expetedDate);
     
-    instance.string = @"Do the thing last monday";
-    date = [instance dateFromString:instance.string];
-    NSLog(@"\n %@", date);
-    
-    instance.string = @"Do the thing this monday";
-    date = [instance dateFromString:instance.string];
-    NSLog(@"\n %@", date);
-    
-    instance.string = @"Do the thing.. never.";
-    date = [instance dateFromString:instance.string];
-    NSLog(@"\n %@", date);
+//    instance.string = @"Do the thing next monday";
+//    date = [instance dateFromString:instance.string];
+//    NSLog(@"\n%@", date);
+//    
+//    instance.string = @"Do the thing last monday";
+//    date = [instance dateFromString:instance.string];
+//    NSLog(@"\n %@", date);
+//    
+//    instance.string = @"Do the thing this monday";
+//    date = [instance dateFromString:instance.string];
+//    NSLog(@"\n %@", date);
+//    
+//    instance.string = @"Do the thing.. never.";
+//    date = [instance dateFromString:instance.string];
+//    NSLog(@"\n %@", date);
     
 //    KFRFuzzyDateTranslator *thing = [[KFRFuzzyDateTranslator alloc] init];
 //    //thing.string = @"tomorrow";

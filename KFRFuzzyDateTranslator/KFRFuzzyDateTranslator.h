@@ -14,11 +14,13 @@
 @property (nonatomic, readonly) NSDate *date;
 @property (nonatomic, strong) NSString *dateString;
 @property (nonatomic, readonly, copy) NSCalendar *calendar;
+@property (nonatomic, strong) NSDate *relevantDate;
 @property (readonly) NSInteger month;
 @property (readonly) NSUInteger weekday;
 
 - (instancetype)initWithString:(NSString *)string;
 - (instancetype)initWithRelevantDate:(NSString *)dateString;
 - (id) dateFromString:(NSString *)string;
+- (NSDate *) returnDateAtMidnight: (NSString *)dateString;
 
 @end

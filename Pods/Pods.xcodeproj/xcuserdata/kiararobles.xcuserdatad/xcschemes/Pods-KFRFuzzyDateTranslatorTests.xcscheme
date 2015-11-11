@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'CC518BF71A1FF7DD12D224F6'
+               BlueprintIdentifier = '09366A90AC98C2A3C200CD7A'
                BlueprintName = 'Pods-KFRFuzzyDateTranslatorTests'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libPods-KFRFuzzyDateTranslatorTests.a'>
