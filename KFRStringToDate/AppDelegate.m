@@ -19,12 +19,26 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     KFRStringToDate *instance = [[KFRStringToDate alloc]init];
-    instance.string = @"do the thing next never";
-    
+    NSLog(@"______________________________________");
+    instance.string = @"Do the thing next week";
     id date = [instance dateFromString:instance.string];
+    NSLog(@"\nNext Week: %@", date);
     
-    NSLog(@"%@", date);
+    instance.string = @"Do the thing next monday";
+    date = [instance dateFromString:instance.string];
+    NSLog(@"\n %@", date);
     
+    instance.string = @"Do the thing last monday";
+    date = [instance dateFromString:instance.string];
+    NSLog(@"\n %@", date);
+    
+    instance.string = @"Do the thing this monday";
+    date = [instance dateFromString:instance.string];
+    NSLog(@"\n %@", date);
+    
+    instance.string = @"Do the thing.. never.";
+    date = [instance dateFromString:instance.string];
+    NSLog(@"\n %@", date);
     return YES;
 }
 
