@@ -19,6 +19,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch
     
+    KFRFuzzyDateTranslator *today = [[KFRFuzzyDateTranslator alloc] init];
+    NSString *date = @"do it today";
+    id datereturn = [today dateFromString:date];
+    
+    NSLog(@"%@", datereturn);
+    
+    
     return YES;
 }
 

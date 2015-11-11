@@ -113,6 +113,19 @@ typedef NS_ENUM(NSInteger, enumDay) {
     
     return destinationDate;
 }
+- (NSDate *) returnDateAtMidnight: (NSString *)dateString {
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    dateFormatter.dateFormat = @"dd-MMM-yy";
+    
+    // Convert to date at midnight
+    NSDate *const date = [dateFormatter dateFromString:dateString];
+    NSCalendar *const calendar = NSCalendar.currentCalendar;
+    NSCalendarUnit const preservedComponents = (NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay);
+    NSDateComponents *const components = [calendar components:preservedComponents fromDate:date];
+    NSDate *dateAtMidnight = [calendar dateFromComponents:components];
+    
+    return dateAtMidnight;
+}
 - (NSMutableArray *) stringToWordArray:(NSString *)string {
     
     NSCharacterSet *charactersToRemove = [[NSCharacterSet alphanumericCharacterSet] invertedSet];
@@ -194,19 +207,6 @@ typedef NS_ENUM(NSInteger, enumDay) {
     
     return nil;
 }
-- (NSDate *) returnDateAtMidnight: (NSString *)dateString {
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    dateFormatter.dateFormat = @"dd-MMM-yy";
-
-    // Convert to date at midnight
-    NSDate *const date = [dateFormatter dateFromString:dateString];
-    NSCalendar *const calendar = NSCalendar.currentCalendar;
-    NSCalendarUnit const preservedComponents = (NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay);
-    NSDateComponents *const components = [calendar components:preservedComponents fromDate:date];
-    NSDate *dateAtMidnight = [calendar dateFromComponents:components];
-    
-    return dateAtMidnight;
-}
 - (NSDate *) returnDate {
     //**//**||============================================================||**\\**\\
     //                              General Day
@@ -284,12 +284,13 @@ typedef NS_ENUM(NSInteger, enumDay) {
         self.date = [self.calendar dateByAddingComponents:deltaComps toDate:self.relevantDate options:0];
     }
     
-    // Convert to date at midnight
-    NSDate *const date = self.date;
-    NSCalendar *const calendar = NSCalendar.currentCalendar;
-    NSCalendarUnit const preservedComponents = (NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay);
-    NSDateComponents *const components = [calendar components:preservedComponents fromDate:date];
-    self.date = [calendar dateFromComponents:components];
+    [self.calendar setTimeZone:[NSTimeZone systemTimeZone]];
+    NSDateComponents * comp = [self.calendar components:( NSCalendarUnitYear| NSCalendarUnitMonth | NSCalendarUnitDay | NSCalendarUnitHour | NSCalendarUnitMinute) fromDate:self.date];
+    [comp setHour:0];
+    [comp setMinute:0];
+    [comp setHour:0];
+    NSDate *startOfToday = [self.calendar dateFromComponents:comp];
+    self.date = startOfToday;
     
     return self.date;
 }
